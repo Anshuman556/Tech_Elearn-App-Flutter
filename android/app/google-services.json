@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "15630299595",
+    "project_id": "techelearn-6d402",
+    "storage_bucket": "techelearn-6d402.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15630299595:android:326edaa70a064f378fc64e",
+        "android_client_info": {
+          "package_name": "com.tech_elearn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15630299595-dmekehb3seknonirk26ukvc2bdb04pve.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAedyKmbgJyBOMoPej-ADcJSxwpCQIeEM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "15630299595-dmekehb3seknonirk26ukvc2bdb04pve.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
