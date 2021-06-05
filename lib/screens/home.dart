@@ -5,6 +5,7 @@ import 'package:tech_elearn/models/user.dart';
 import 'package:tech_elearn/screens/question_list.dart';
 import 'package:tech_elearn/screens/settings.dart';
 import 'package:tech_elearn/screens/signin_screen.dart';
+import 'package:tech_elearn/screens/videos.dart';
 import 'package:tech_elearn/services/registration_service.dart';
 import 'package:flutter/material.dart';
 
@@ -173,17 +174,26 @@ class _HomeScreenState extends State<HomeScreen> {
                                       showDropDown = false;
                                     });
                                   },
-                                  child: Container(
-                                    padding: EdgeInsets.all(5),
-                                    child: Text(
-                                      isGuest
-                                          ? 'Guest User'
-                                          : user?.email ?? '',
-                                      style: TextStyle(
-                                          fontSize: MediaQuery.of(context)
-                                              .size
-                                              .width /
-                                              25),
+                                  child: GestureDetector(
+                                    onTap: () {
+                                      setState(() {
+                                        showDropDown = false;
+                                      });
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) => Module()));
+                                    },
+                                    child: Container(
+                                      padding: EdgeInsets.all(5),
+                                      child: Text(
+                                        "Modules",
+                                        style: TextStyle(
+                                            fontSize: MediaQuery.of(context)
+                                                .size
+                                                .width /
+                                                25),
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -209,6 +219,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     ),
                                   ),
                                 ),
+
                                 Container(
                                   padding: EdgeInsets.all(5),
                                   child: GestureDetector(

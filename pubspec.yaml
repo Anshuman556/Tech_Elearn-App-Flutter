@@ -36,6 +36,9 @@ dependencies:
   google_sign_in: ^4.5.1
   intl: ^0.17.0
   in_app_purchase: ^0.3.4
+
+
+
   flutter_facebook_login:
     git:
       url: https://github.com/smourier/flutter_facebook_login
@@ -61,6 +64,7 @@ flutter:
     - assets/images/
     - assets/icons/
     - assets/logos/
+
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

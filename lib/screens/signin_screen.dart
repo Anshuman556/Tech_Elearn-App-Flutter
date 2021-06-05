@@ -245,7 +245,7 @@ class _LoginScreenState extends State<LoginScreen> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
-          /* _buildSocialBtn(
+           _buildSocialBtn(
             () async {
               var result = await _registration.signInWithFacebook();
               if (result != null) {
@@ -264,7 +264,7 @@ class _LoginScreenState extends State<LoginScreen> {
             AssetImage(
               'assets/logos/facebook.jpg',
             ),
-          ),*/
+          ),
           _buildSocialBtn(
                 () async {
               setState(() {

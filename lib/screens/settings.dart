@@ -9,6 +9,7 @@ import 'package:tech_elearn/screens/subscribe_screen.dart';
 import 'package:tech_elearn/services//registration_service.dart';
 import 'package:tech_elearn/utilities/string.dart';
 import 'package:intl/intl.dart';
+import 'package:tech_elearn/screens/videos.dart';
 
 class Setting extends StatefulWidget {
   @override

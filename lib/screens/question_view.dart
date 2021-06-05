@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:tech_elearn/models/questions.dart';
 
+
 class QuestionFullview extends StatefulWidget {
   final List<Question> list;
   final int index;

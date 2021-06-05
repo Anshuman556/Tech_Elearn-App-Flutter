@@ -26,7 +26,7 @@ class _QuestionListState extends State<QuestionList> {
   void initState() {
     super.initState();
     getQuestions();
-    //  width = MediaQuery.of(context).size.width;
+    // width = MediaQuery.of(context).size.width;
   }
 
   getQuestions() async {
@@ -41,6 +41,7 @@ class _QuestionListState extends State<QuestionList> {
       }).toList();
     });
     _questions = questions;
+
     setState(() {});
   }
 
@@ -134,7 +135,7 @@ class _QuestionListState extends State<QuestionList> {
                         child: Material(
                           elevation: 5,
                           child: ListTile(
-                            //trailing: Text(_questions[index].qdifficulty),
+                            trailing: Text(_questions[index].qdifficulty),
                             leading: Container(
                               height: 50,
                               width: 50,
@@ -154,19 +155,20 @@ class _QuestionListState extends State<QuestionList> {
                               style: TextStyle(fontSize:  MediaQuery.of(context).size.width / 30),
                               overflow: TextOverflow.ellipsis,
                             ),
-                            /*subtitle: Text(
+                            subtitle: Text(
                                     _questions[index].qanswer,
                                     style: TextStyle(fontSize: 15),
                                     overflow: TextOverflow.ellipsis,
 
-                                  ),*/
+                                  ),
                           ),
                         ),
                       ),
                     );
                   },
                 ),
-              )
+              ),
+
             ],
           ),
         ),
